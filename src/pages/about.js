@@ -1,9 +1,14 @@
 import * as React from "react"
-import Layout from "../components/layout"
 import Test from "../components/test"
+import { Link } from "gatsby"
 
 export default function Index() {
-  return <Layout title="Home Page"> <Test name="Component Test"></Test> </Layout>
+  return (
+    <>
+    <Test name="About"></Test>
+    <Link to="/">Home</Link>
+    </>
+  )
 }
 
 export const Head = () => <title>Home Page</title>
